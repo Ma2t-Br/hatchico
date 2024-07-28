@@ -30,6 +30,37 @@ const displayLastEntry = (entry) => {
     }
 };
 
+// Fonction pour vérifier la dernière entrée et ajuster les options
+const checkLastEntryAndAdjustOptions = (entry) => {
+    const matinOption = document.getElementById('matinLabel');
+    const soirOption = document.getElementById('soirLabel');
+    const validerButton = document.getElementById('valider');
+    const title = document.getElementById('title')
+
+    if (entry) {
+        const { meal, dateTime } = entry;
+        const lastEntryDate = dateTime.split(' à ')[0];
+
+        if (lastEntryDate === today.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' })) {
+            if (meal === 'matin') {
+                matinOption.style.display = 'none';
+                soirOption.style.display = 'block';
+            } else if (meal === 'soir') {
+                matinOption.style.display = 'none';
+                soirOption.style.display = 'none';
+                validerButton.style.display = 'none';
+                title.innerHTML = "Hatchi a déjà<br>mangé aujourd'hui";
+            }
+        } else {
+            matinOption.style.display = 'block';
+            soirOption.style.display = 'block';
+        }
+    } else {
+        matinOption.style.display = 'block';
+        soirOption.style.display = 'block';
+    }
+};
+
 // Récupérer la dernière entrée de la base de données
 const getLastEntry = () => {
     const lastEntryQuery = query(ref(database, 'meals'), limitToLast(1));
@@ -39,6 +70,7 @@ const getLastEntry = () => {
             lastEntry = childSnapshot.val();
         });
         displayLastEntry(lastEntry);
+        checkLastEntryAndAdjustOptions(lastEntry)
     });
 };
 
@@ -53,33 +85,52 @@ dateElement.textContent = today.toLocaleDateString('fr-FR', options);
 
 // JavaScript pour la pop-up de nom et soumettre les données à Firebase
 const form = document.getElementById('mealForm');
+
+const modal = document.getElementById('nameModal');
+const closeBtn = document.getElementsByClassName('close')[0];
+const modalSubmit = document.getElementById('modalSubmit');
+const nameSelect = document.getElementById('nameSelect');
+
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Empêche l'envoi du formulaire
-    const personName = prompt("Entrez votre nom:");
-    if (personName) {
-        const mealInput = form.querySelector('input[name="meal"]:checked');
-        if (mealInput) {
-            const mealValue = mealInput.value;
-            const dateTimeString = today.toLocaleString('fr-FR', {
-                year: 'numeric', month: 'long', day: 'numeric',
-                hour: 'numeric', minute: 'numeric', second: 'numeric'
-            });
+    modal.style.display = 'block';
+});
 
-            // Enregistrer les données dans Firebase
-            push(ref(database, 'meals'), {
-                name: personName,
-                meal: mealValue,
-                dateTime: dateTimeString
-            }).then(() => {
-                alert(`Merci, ${personName}!`);
-            }).catch((error) => {
-                console.error('Erreur:', error);
-                alert('Une erreur est survenue lors de l\'enregistrement des données.');
-            });
-        } else {
-            alert("Veuillez sélectionner un repas.");
-        }
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+};
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+};
+
+modalSubmit.addEventListener('click', function() {
+    const personName = nameSelect.value;
+    const mealInput = form.querySelector('input[name="meal"]:checked');
+    if (mealInput) {
+        const mealValue = mealInput.value;
+        const dateTimeString = today.toLocaleString('fr-FR', {
+            year: 'numeric', month: 'long', day: 'numeric',
+            hour: 'numeric', minute: 'numeric', second: 'numeric'
+        });
+
+        // Enregistrer les données dans Firebase
+        push(ref(database, 'meals'), {
+            name: personName,
+            meal: mealValue,
+            dateTime: dateTimeString
+        }).then(() => {
+            alert(`Merci, ${personName}!`);
+            modal.style.display = 'none';
+            // Mettre à jour l'affichage avec la nouvelle entrée
+            getLastEntry();
+        }).catch((error) => {
+            console.error('Erreur:', error);
+            alert('Une erreur est survenue lors de l\'enregistrement des données.');
+        });
     } else {
-        alert("Le nom n'a pas été fourni.");
+        alert("Veuillez sélectionner un repas.");
     }
 });
