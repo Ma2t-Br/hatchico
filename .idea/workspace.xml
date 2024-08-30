@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf421fc8-3449-4b02-9956-a0bf47633489" name="Changes" comment="Midi -&gt; Matin">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bf421fc8-3449-4b02-9956-a0bf47633489" name="Changes" comment="Version 1.1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hatchico.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Img/hatchico.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
@@ -53,6 +53,7 @@
       <recent name="C:\Users\matth_9fioaz\OneDrive - Efrei\Projet perso\hatchico\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\matth_9fioaz\OneDrive - Efrei\Projet perso\hatchico\Img" />
       <recent name="C:\Users\matth_9fioaz\OneDrive - Efrei\Projet perso\hatchico" />
       <recent name="C:\Users\matth_9fioaz\OneDrive - Efrei\Projet perso\hatchico\old" />
     </key>
@@ -88,7 +89,8 @@
       <workItem from="1722153361288" duration="46000" />
       <workItem from="1722153930640" duration="47000" />
       <workItem from="1722153989796" duration="8348000" />
-      <workItem from="1722163004119" duration="4442000" />
+      <workItem from="1722163004119" duration="4812000" />
+      <workItem from="1725006142062" duration="4515000" />
     </task>
     <task id="LOCAL-00001" summary="First version">
       <option name="closed" value="true" />
@@ -106,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722122089048</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Version 1.1.0">
+      <option name="closed" value="true" />
+      <created>1722169876013</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722169876013</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First version" />
     <MESSAGE value="Midi -&gt; Matin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Midi -&gt; Matin" />
+    <MESSAGE value="Version 1.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.1.0" />
   </component>
 </project>

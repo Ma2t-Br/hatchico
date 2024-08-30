@@ -134,3 +134,77 @@ modalSubmit.addEventListener('click', function() {
         alert("Veuillez sélectionner un repas.");
     }
 });
+
+// Liste des noms à suivre
+const namesToTrack = ["Aurélie", "Chloé", "Claire", "Marie-lou", "Matthieu", "Nicolas", "Philippe", "Thibault", "Vincent"];
+
+// Fonction pour compter les points
+const countPoints = () => {
+    const points = {};
+
+    // Initialiser les points à 0 pour chaque nom
+    namesToTrack.forEach(name => {
+        points[name] = 0;
+    });
+
+    // Récupérer toutes les entrées de la base de données
+    const entriesQuery = ref(database, 'meals');
+    onValue(entriesQuery, (snapshot) => {
+        snapshot.forEach((childSnapshot) => {
+            const entry = childSnapshot.val();
+            if (namesToTrack.includes(entry.name)) {
+                points[entry.name]++;
+            }
+        });
+
+        // Afficher le tableau des points
+        displayPoints(points);
+    });
+};
+
+// Fonction pour afficher le tableau des points
+const displayPoints = (points) => {
+    const pointsCounterElement = document.getElementById('pointsCounter');
+    pointsCounterElement.innerHTML = '<h3>Compteur de Points</h3>';
+
+    const pointsTable = document.createElement('table');
+    pointsTable.style.width = '100%';
+    pointsTable.style.borderCollapse = 'collapse';
+
+    const sortedPoints = Object.entries(points).sort((a, b) => b[1] - a[1]);
+
+    sortedPoints.forEach(([name, score], index) => {
+        const row = document.createElement('tr');
+        row.style.borderBottom = '1px solid #ddd';
+
+        const nameCell = document.createElement('td');
+        nameCell.style.padding = '8px';
+        nameCell.style.textAlign = 'left';
+
+        // Ajouter les icônes en fonction de la position
+        if (index === 0) {
+            nameCell.innerHTML = `${name} <img src="Img/os or.png" alt="🥇" style="width:18px; height:18px; vertical-align:middle;">`; // Os d'or
+        } else if (index === 1) {
+            nameCell.innerHTML = `${name} <img src="Img/os argent.png" alt="🥈" style="width:18px; height:18px; vertical-align:middle;">`; // Os d'argent
+        } else if (index === 2) {
+            nameCell.innerHTML = `${name} <img src="Img/os bronze.png" alt="🥉" style="width:18px; height:18px; vertical-align:middle;">`; // Os de bronze
+        } else {
+            nameCell.textContent = name;
+        }
+
+        const scoreCell = document.createElement('td');
+        scoreCell.textContent = score;
+        scoreCell.style.padding = '8px';
+        scoreCell.style.textAlign = 'right';
+
+        row.appendChild(nameCell);
+        row.appendChild(scoreCell);
+        pointsTable.appendChild(row);
+    });
+
+    pointsCounterElement.appendChild(pointsTable);
+};
+
+// Appel initial pour récupérer et afficher le compteur de points
+countPoints();
+

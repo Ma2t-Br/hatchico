@@ -6,13 +6,17 @@ body, html {
 }
 
 .container {
-    background-image: url('hatchico.jpg');
+    background-image: url('Img/hatchico 2.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 .form-box {
@@ -142,3 +146,19 @@ button:hover {
 #modalSubmit:hover {
     background-color: #0056b3;
 }
+
+#pointsCounter {
+    margin: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.arrow-down {
+    position: absolute; /* Positionne l'image en position absolue */
+    bottom: 10px; /* Place l'image 10px depuis le bas de la div */
+    left: 50%; /* Centre l'image horizontalement */
+    transform: translateX(-50%); /* Ajuste l'image pour qu'elle soit parfaitement centrée */
+    width: 30px; /* Taille de l'image, à ajuster selon vos besoins */
+    height: auto; /* Maintient le rapport d'aspect de l'image */
+}
+
