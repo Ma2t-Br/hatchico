@@ -42,3 +42,8 @@
     max-height: 300px;
     overflow-y: auto;
 }
+
+.version {
+    text-align: center;
+    font-size: 8px;
+}

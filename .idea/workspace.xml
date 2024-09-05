@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf421fc8-3449-4b02-9956-a0bf47633489" name="Changes" comment="Version 1.3.0">
-      <change afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/history.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/modals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+    <list default="true" id="bf421fc8-3449-4b02-9956-a0bf47633489" name="Changes" comment="Version 1.3.0 cleaning">
+      <change afterPath="$PROJECT_DIR$/Img/dog-head.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/animatedDog.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +27,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Ma2t-Br&quot;
+    &quot;state&quot;: &quot;OPEN&quot;
   }
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDOMb-ims56hYVr&quot;,
+        &quot;number&quot;: 1
+      },
+      &quot;lastSeen&quot;: 1725540569745
+    }
+  ]
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
@@ -43,6 +55,9 @@
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -59,7 +74,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Version-2.0.0",
+    "git-widget-placeholder": "Version-1.3.1",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/matth_9fioaz/OneDrive - Efrei/Projet perso/hatchico/Img",
     "node.js.detected.package.eslint": "true",
@@ -124,7 +139,7 @@
       <workItem from="1722163004119" duration="4812000" />
       <workItem from="1725006142062" duration="4515000" />
       <workItem from="1725367411792" duration="2456000" />
-      <workItem from="1725521499542" duration="14284000" />
+      <workItem from="1725521499542" duration="18120000" />
     </task>
     <task id="LOCAL-00001" summary="First version">
       <option name="closed" value="true" />
@@ -158,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725536182331</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Version 1.3.0 cleaning">
+      <option name="closed" value="true" />
+      <created>1725540115448</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725540115448</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +203,7 @@
     <MESSAGE value="Midi -&gt; Matin" />
     <MESSAGE value="Version 1.1.0" />
     <MESSAGE value="Version 1.3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.3.0" />
+    <MESSAGE value="Version 1.3.0 cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.3.0 cleaning" />
   </component>
 </project>
