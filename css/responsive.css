@@ -1,0 +1,15 @@
+/* responsive.css */
+
+@media screen and (max-width: 600px) {
+    #date {
+        display: block;
+    }
+
+    .history-container {
+        display: none;
+    }
+
+    .rotate {
+        display: revert;
+    }
+}

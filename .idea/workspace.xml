@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf421fc8-3449-4b02-9956-a0bf47633489" name="Changes" comment="Version 1.2.0">
-      <change afterPath="$PROJECT_DIR$/Img/rotate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QR Code.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bf421fc8-3449-4b02-9956-a0bf47633489" name="Changes" comment="Version 1.3.0">
+      <change afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/history.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/modals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +124,7 @@
       <workItem from="1722163004119" duration="4812000" />
       <workItem from="1725006142062" duration="4515000" />
       <workItem from="1725367411792" duration="2456000" />
-      <workItem from="1725521499542" duration="10665000" />
+      <workItem from="1725521499542" duration="14284000" />
     </task>
     <task id="LOCAL-00001" summary="First version">
       <option name="closed" value="true" />
@@ -147,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722169876013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Version 1.3.0">
+      <option name="closed" value="true" />
+      <created>1725536182331</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725536182331</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +179,7 @@
     <MESSAGE value="First version" />
     <MESSAGE value="Midi -&gt; Matin" />
     <MESSAGE value="Version 1.1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 1.1.0" />
+    <MESSAGE value="Version 1.3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 1.3.0" />
   </component>
 </project>

@@ -1,0 +1,40 @@
+/* history.css */
+
+/* Styles pour la case d'historique */
+.day-history {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 10px;
+    width: 200px;
+}
+
+/* Styles pour la pastille */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Couleur verte pour les jours où matin et soir sont présents */
+.badge-green {
+    background-color: green;
+}
+
+/* Couleur rouge pour les jours où il manque soit matin soit soir */
+.badge-red {
+    background-color: red;
+}
+
+.day-history h3 {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+}

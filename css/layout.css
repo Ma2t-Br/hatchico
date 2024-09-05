@@ -1,0 +1,44 @@
+/* layout.css */
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 5px;
+}
+
+#date {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    display : none;
+}
+
+#pointsCounter {
+    margin: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: auto;
+}
+
+.history-container {
+    margin-left: 20px;
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
