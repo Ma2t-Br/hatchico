@@ -1,0 +1,49 @@
+/* forms.css */
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="radio"].meal {
+    display: none;
+}
+input[type="radio"].meal + label {
+    border: 1px dashed darkgray;
+    border-radius: 5px;
+    padding: 5px;
+    color: darkgray;
+    display: none;
+}
+input[type="radio"].meal:checked + label {
+    border: 1px solid #007BFF;
+    color: #007BFF;
+}
+
+#modalSubmit {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+#modalSubmit:hover {
+    background-color: #0056b3;
+}
+
+#nameSelect {
+    width: 50%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hatchico</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -23,6 +23,7 @@
                 </form>
             </div>
             <div id="lastEntry" class="card"></div>
+            <img class="rotate" src="Img/rotate.png" alt="">
         </div>
 
         <div id="nameModal" class="modal">
@@ -42,7 +43,9 @@
                 <button id="modalSubmit">&#10003;</button>
             </div>
         </div>
+
         <img src="Img/fleche.png" alt="Flèche vers le bas" class="arrow-down">
+        <div id="historyContainer" class="card history-container"></div>
     </div>
     <div id="pointsCounter" class="card"></div>
     <script src="script.js" type="module"></script>
