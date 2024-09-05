@@ -1,0 +1,17 @@
+.dog-head {
+    z-index: 100;
+    -webkit-animation: head-move 1s ease-in-out infinite;
+}
+
+.dog-head img {
+    width: 50px;
+    height: auto;
+}
+
+/* ANIMATIONS ---------------------------------------------------------*/
+
+@-webkit-keyframes head-move {
+    50% {
+        -webkit-transform: rotate(-3deg);
+    }
+}
